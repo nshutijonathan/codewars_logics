@@ -17,6 +17,8 @@ const Factorial = () => {
         placeholder="enter number"
         value={value}
         type="number"
+        required
+        pattern="[0-9]*"
         onChange={changeHandler}
       />
       <button onClick={submitHandler}>Submit</button>
