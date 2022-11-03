@@ -10,6 +10,7 @@ const Factorial = () => {
     e.preventDefault();
     setResult(checkFactorial(value));
   };
+  console.log("result", typeof result);
   return (
     <div className="container">
       <h1>Factorial</h1>
@@ -22,9 +23,12 @@ const Factorial = () => {
         onChange={changeHandler}
       />
       <button onClick={submitHandler}>Submit</button>
-      <ul>
-        <p>{result}</p>
-      </ul>
+
+      {typeof result === "string" ? (
+        <p style={{ color: "red" }}>{result}</p>
+      ) : (
+        <p style={{ color: "black" }}>{result}</p>
+      )}
     </div>
   );
 };

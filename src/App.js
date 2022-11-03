@@ -1,9 +1,10 @@
 import "./App.css";
-import Factorial from "./components/Factorial";
+
+import ReactForms from "./components/ReactForms";
 function App() {
   return (
     <div className="App">
-      <Factorial />
+      <ReactForms />
     </div>
   );
 }

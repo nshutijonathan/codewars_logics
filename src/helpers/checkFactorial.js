@@ -11,3 +11,4 @@ export const checkFactorial = (n) => {
   }
   return result;
 };
+
